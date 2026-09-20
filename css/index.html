@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="fr" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Voix de Femmes - Organisation engagée pour l'autonomie, la solidarité et l'épanouissement des femmes.">
+  <meta name="keywords" content="organisation de femmes, autonomisation, solidarité, accompagnement, leadership féminin, communauté">
+  <meta name="author" content="Voix de Femmes">
+  <title>Voix de Femmes | Agir ensemble pour l'autonomie</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3+ CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons (CDN) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Glowing Background Orbs -->
+  <div class="ambient-glow glow-top-left" aria-hidden="true"></div>
+  <div class="ambient-glow glow-center-right" aria-hidden="true"></div>
+  <div class="ambient-glow glow-bottom-left" aria-hidden="true"></div>
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <!-- Header / Navigation Fixed -->
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-glass py-3" aria-label="Navigation principale">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#" aria-label="Accueil Femmes de l'Église">
+          <div class="brand-icon-wrapper">
+            <i class="bi bi-flower1"></i>
+          </div>
+          <span class="brand-text">Femmes <span class="text-neon-cyan">de l'Église</span></span>
+        </a>
+
+        <!-- Mobile Toggle Button -->
+        <button class="navbar-toggler border-0 shadow-none text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Ouvrir le menu de navigation">
+          <i class="bi bi-list fs-2"></i>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-4">
+            <li class="nav-item">
+              <a class="nav-link custom-nav-link" href="#about">À propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link custom-nav-link" href="#programmes">Nos actions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link custom-nav-link" href="#evenements">Communiqués</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link custom-nav-link" href="#impact">Notre impact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link custom-nav-link" href="#contact">Inscription</a>
+            </li>
+          </ul>
+
+          <!-- Action CTA -->
+          <div class="d-flex align-items-center gap-3">
+            <a href="#contact" class="btn btn-neon-glow rounded-pill px-4 py-2 d-inline-flex align-items-center gap-2">
+              <span>Nous rejoindre</span>
+              <i class="bi bi-arrow-right-short fs-5"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- HERO SECTION -->
+    <section class="hero-section position-relative d-flex align-items-center" id="hero">
+      <div class="container py-5">
+        <div class="row align-items-center g-5 min-vh-80">
+          
+          <!-- Hero Left Column -->
+          <div class="col-lg-6 hero-left animate-on-load">
+            <!-- Release Badge -->
+            <div class="badge-community mb-3 d-inline-flex align-items-center gap-2">
+              <span class="status-pulse-dot" aria-hidden="true"></span>
+              <span class="badge-text">Une communauté engagée pour les femmes</span>
+              <span class="badge-pill-sub">DEPUIS 2018</span>
+            </div>
+
+            <!-- Main Title -->
+            <h1 class="display-4 fw-extrabold hero-title mb-4">
+              Faire grandir la <span class="text-gradient">force des femmes</span>, ensemble.
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="lead text-muted-sub mb-4 fs-5 hero-description">
+              Voix de Femmes accompagne chaque femme dans son parcours, renforce son autonomie et crée
+              des espaces où la solidarité devient une force pour toute la communauté.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="d-flex flex-wrap gap-3 mb-5">
+              <a href="#contact" class="btn btn-neon-glow btn-lg rounded-pill px-4 py-3 d-inline-flex align-items-center gap-2">
+                <i class="bi bi-heart-fill"></i>
+                <span>Rejoindre la communauté</span>
+              </a>
+              <a href="#programmes" class="btn btn-glass btn-lg rounded-pill px-4 py-3 d-inline-flex align-items-center gap-2">
+                <i class="bi bi-arrow-down-right-circle"></i>
+                <span>Découvrir nos actions</span>
+              </a>
+            </div>
+
+            <!-- Community Proof Bar -->
+            <div class="hero-stats-strip d-flex align-items-center gap-3 pt-3 border-top-sub">
+              <div class="avatar-stack d-flex">
+                <span class="avatar-circle av-1"><i class="bi bi-person-fill"></i></span>
+                <span class="avatar-circle av-2"><i class="bi bi-person-fill"></i></span>
+                <span class="avatar-circle av-3"><i class="bi bi-person-fill"></i></span>
+                <span class="avatar-circle av-4">+1k</span>
+              </div>
+              <div class="hero-stats-caption">
+                <div class="fw-semibold text-light">+1 250 femmes accompagnées</div>
+                <div class="text-muted-sub small"><i class="bi bi-stars text-neon-cyan me-1"></i>Écoute • Entraide • Autonomie</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Right Column: Mission de l'organisation -->
+          <div class="col-lg-6 hero-right animate-on-load-delay">
+            <div class="mission-window-card shadow-lg">
+              <div class="window-header d-flex align-items-center justify-content-between px-3 py-2 border-bottom-sub">
+                <div class="window-controls d-flex align-items-center gap-2">
+                  <span class="dot dot-close"></span>
+                  <span class="dot dot-minimize"></span>
+                  <span class="dot dot-maximize"></span>
+                </div>
+                <div class="window-tab d-flex align-items-center gap-2">
+                  <i class="bi bi-heart-fill text-neon-cyan"></i>
+                  <span class="font-mono small text-light">notre-mission</span>
+                </div>
+                <div class="window-badge font-mono small text-neon-cyan">
+                  <span class="indicator-live"></span> ENSEMBLE
+                </div>
+              </div>
+
+              <div class="mission-body p-4 p-md-5">
+                <div class="d-flex align-items-center gap-3 mb-4">
+                  <div class="metric-icon-box"><i class="bi bi-people-fill"></i></div>
+                  <div>
+                    <span class="text-muted-sub small text-uppercase tracking-wider">Femmes de l'Église</span>
+                    <h2 class="h3 text-light mb-0">Une communauté qui prie et avance ensemble.</h2>
+                  </div>
+                </div>
+                <div class="row g-3">
+                  <div class="col-6"><div class="glass-card p-3"><strong class="d-block text-light">Prier</strong><span class="text-muted-sub small">Porter nos vies dans la prière.</span></div></div>
+                  <div class="col-6"><div class="glass-card p-3"><strong class="d-block text-light">Partager</strong><span class="text-muted-sub small">Écouter et se soutenir avec bienveillance.</span></div></div>
+                  <div class="col-6"><div class="glass-card p-3"><strong class="d-block text-light">Servir</strong><span class="text-muted-sub small">Mettre nos dons au service des autres.</span></div></div>
+                  <div class="col-6"><div class="glass-card p-3"><strong class="d-block text-light">Grandir</strong><span class="text-muted-sub small">Fortifier notre foi au quotidien.</span></div></div>
+                </div>
+              </div>
+
+              <div class="window-footer px-3 py-2 d-flex align-items-center justify-content-between font-mono small border-top-sub">
+                <div class="d-flex align-items-center gap-3 text-muted-sub">
+                  <span><i class="bi bi-heart me-1"></i>Foi vivante</span>
+                  <span><i class="bi bi-check2-circle text-success me-1"></i>Accueil ouvert</span>
+                </div>
+                <div class="text-neon-cyan">
+                  <i class="bi bi-sparkles me-1"></i>Ensemble
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS & IMPACT SECTION (METRICS) -->
+    <section class="metrics-section py-5 position-relative" id="impact">
+      <div class="container">
+        <div class="row g-4 justify-content-center">
+          
+          <!-- Metric 1 -->
+          <div class="col-sm-6 col-lg-3 scroll-reveal">
+            <div class="metric-card glass-card text-center p-4">
+              <div class="metric-icon-box mx-auto mb-3">
+                <i class="bi bi-people-fill"></i>
+              </div>
+              <div class="metric-number display-5 fw-bold text-gradient mb-1">+1,250</div>
+              <div class="metric-title fw-semibold text-light mb-1">Membres Actives</div>
+              <p class="metric-desc text-muted-sub small m-0">Femmes formées, mentorées et connectées dans 15 pays.</p>
+            </div>
+          </div>
+
+          <!-- Metric 2 -->
+          <div class="col-sm-6 col-lg-3 scroll-reveal">
+            <div class="metric-card glass-card text-center p-4">
+              <div class="metric-icon-box mx-auto mb-3">
+                <i class="bi bi-graph-up-arrow"></i>
+              </div>
+              <div class="metric-number display-5 fw-bold text-gradient mb-1">94%</div>
+              <div class="metric-title fw-semibold text-light mb-1">Taux d'Insertion</div>
+              <p class="metric-desc text-muted-sub small m-0">Des femmes accueillies, écoutées et encouragées dans leur cheminement.</p>
+            </div>
+          </div>
+
+          <!-- Metric 3 -->
+          <div class="col-sm-6 col-lg-3 scroll-reveal">
+            <div class="metric-card glass-card text-center p-4">
+              <div class="metric-icon-box mx-auto mb-3">
+                <i class="bi bi-patch-check-fill"></i>
+              </div>
+              <div class="metric-number display-5 fw-bold text-gradient mb-1">45+</div>
+              <div class="metric-title fw-semibold text-light mb-1">Servantes engagées</div>
+              <p class="metric-desc text-muted-sub small m-0">Des femmes qui donnent de leur temps pour accompagner les autres.</p>
+            </div>
+          </div>
+
+          <!-- Metric 4 -->
+          <div class="col-sm-6 col-lg-3 scroll-reveal">
+            <div class="metric-card glass-card text-center p-4">
+              <div class="metric-icon-box mx-auto mb-3">
+                <i class="bi bi-heart-pulse-fill"></i>
+              </div>
+              <div class="metric-number display-5 fw-bold text-gradient mb-1">100%</div>
+              <div class="metric-title fw-semibold text-light mb-1">Une foi en action</div>
+              <p class="metric-desc text-muted-sub small m-0">Des gestes concrets de solidarité auprès des familles et du voisinage.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT & MISSION SECTION -->
+    <section class="about-section py-5" id="about">
+      <div class="container py-lg-4">
+        <div class="row align-items-center g-5">
+          
+          <!-- About Left: Interactive Mission Card -->
+          <div class="col-lg-6 scroll-reveal">
+            <div class="about-preview-card glass-card p-4 p-md-5 position-relative overflow-hidden">
+              <div class="card-glow-badge mb-3 d-inline-flex align-items-center gap-2">
+                <i class="bi bi-shield-check text-neon-cyan"></i>
+                <span class="small font-mono text-uppercase tracking-wider">Foi & Engagement</span>
+              </div>
+              <h2 class="h2 fw-bold text-light mb-4">
+                Fortifier les femmes par la foi, la fraternité et le service.
+              </h2>
+              <p class="text-muted-sub mb-4">
+                L'organisation des Femmes de l'Église est un espace de communion où chacune peut trouver
+                une écoute, une parole d'espérance et une occasion de mettre ses talents au service de Dieu
+                et de la communauté.
+              </p>
+
+              <div class="mission-checks d-flex flex-column gap-3">
+                <div class="d-flex align-items-start gap-3">
+                  <div class="check-icon-circle"><i class="bi bi-check2"></i></div>
+                  <div>
+                    <strong class="text-light d-block">Prière et méditation biblique</strong>
+                    <span class="text-muted-sub small">Des temps réguliers pour prier ensemble et grandir dans la Parole.</span>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-start gap-3">
+                  <div class="check-icon-circle"><i class="bi bi-check2"></i></div>
+                  <div>
+                    <strong class="text-light d-block">Écoute et accompagnement</strong>
+                    <span class="text-muted-sub small">Une présence fraternelle dans les joies, les épreuves et les saisons de la vie.</span>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-start gap-3">
+                  <div class="check-icon-circle"><i class="bi bi-check2"></i></div>
+                  <div>
+                    <strong class="text-light d-block">Service et solidarité</strong>
+                    <span class="text-muted-sub small">Des actions concrètes pour prendre soin des femmes, des enfants et des familles.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- About Right: Visual Highlights -->
+          <div class="col-lg-6 scroll-reveal">
+            <div class="row g-3">
+              <div class="col-12">
+                <div class="glass-card p-4 border-hover-glow">
+                  <div class="d-flex align-items-center gap-3 mb-2">
+                    <div class="icon-round bg-purple-glow"><i class="bi bi-lightbulb-fill"></i></div>
+                    <h3 class="h5 text-light m-0">Une foi qui rassemble</h3>
+                  </div>
+                  <p class="text-muted-sub small m-0">
+                    Créer des liens entre les générations et accueillir chaque femme avec respect, quelle que soit son histoire.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="glass-card p-4 border-hover-glow">
+                  <div class="d-flex align-items-center gap-3 mb-2">
+                    <div class="icon-round bg-cyan-glow"><i class="bi bi-globe2"></i></div>
+                    <h3 class="h5 text-light m-0">Des femmes qui se soutiennent</h3>
+                  </div>
+                  <p class="text-muted-sub small m-0">
+                    Partager nos expériences, porter les fardeaux les unes des autres et célébrer chaque victoire.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="glass-card p-4 border-hover-glow">
+                  <div class="d-flex align-items-center gap-3 mb-2">
+                    <div class="icon-round bg-purple-glow"><i class="bi bi-trophy-fill"></i></div>
+                    <h3 class="h5 text-light m-0">Des mains prêtes à servir</h3>
+                  </div>
+                  <p class="text-muted-sub small m-0">
+                    Visites, entraide et initiatives solidaires pour répondre aux besoins de notre communauté.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PILIERS & PROGRAMMES SECTION -->
+    <section class="programs-section py-5 position-relative" id="programmes">
+      <div class="container py-lg-4">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-700 mx-auto mb-5 scroll-reveal">
+          <div class="badge-community mb-2 d-inline-flex align-items-center gap-2">
+            <i class="bi bi-layers-fill text-neon-cyan"></i>
+            <span class="badge-text">NOS ACTIVITÉS</span>
+          </div>
+          <h2 class="display-5 fw-bold text-light">Grandir et servir ensemble</h2>
+          <p class="text-muted-sub">
+            Des rendez-vous pensés pour nourrir la foi, renforcer les liens et faire vivre la mission de l'Église.
+          </p>
+        </div>
+
+        <!-- Programs Grid -->
+        <div class="row g-4">
+          
+          <!-- Program Card 1 -->
+          <div class="col-md-6 col-lg-4 scroll-reveal">
+            <article class="program-card glass-card h-100 d-flex flex-column p-4">
+              <div class="program-header d-flex align-items-center justify-content-between mb-4">
+                <div class="program-icon-box">
+                  <i class="bi bi-book-half"></i>
+                </div>
+                <span class="program-badge">PAROLE DE DIEU</span>
+              </div>
+              <h3 class="h4 text-light fw-bold mb-3">Études bibliques</h3>
+              <p class="text-muted-sub mb-4 flex-grow-1">
+                Des moments de partage autour de la Bible pour mieux comprendre notre foi et la vivre au quotidien.
+              </p>
+              <ul class="program-features list-unstyled mb-4 small text-muted-sub d-flex flex-column gap-2">
+                <li><i class="bi bi-check-circle-fill text-neon-cyan me-2"></i>Lecture et compréhension des textes bibliques</li>
+                <li><i class="bi bi-check-circle-fill text-neon-cyan me-2"></i>Échanges en petits groupes</li>
+                <li><i class="bi bi-check-circle-fill text-neon-cyan me-2"></i>Application concrète dans nos vies</li>
+              </ul>
+              <a href="#contact" class="btn btn-outline-custom w-100 rounded-pill mt-auto">
+                Participer à une étude <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </article>
+          </div>
+
+          <!-- Program Card 2 -->
+          <div class="col-md-6 col-lg-4 scroll-reveal">
+            <article class="program-card glass-card h-100 d-flex flex-column p-4 featured-program">
+              <div class="program-header d-flex align-items-center justify-content-between mb-4">
+                <div class="program-icon-box featured-icon">
+                  <i class="bi bi-heart-pulse-fill"></i>
+                </div>
+                <span class="program-badge featured-badge">PRIÈRE</span>
+              </div>
+              <h3 class="h4 text-light fw-bold mb-3">Prière et intercession</h3>
+              <p class="text-muted-sub mb-4 flex-grow-1">
+                Nous portons ensemble les besoins des femmes, des familles, de l'Église et de notre communauté dans la prière.
+              </p>
+              <ul class="program-features list-unstyled mb-4 small text-muted-sub d-flex flex-column gap-2">
+                <li><i class="bi bi-check-circle-fill text-neon-cyan me-2"></i>Réunions de prière régulières</li>
+                <li><i class="bi bi-check-circle-fill text-neon-cyan me-2"></i>Sujets de prière partagés avec discrétion</li>
+                <li><i class="bi bi-check-circle-fill text-neon-cyan me-2"></i>Veille et soutien dans la durée</li>
+              </ul>
+              <a href="#contact" class="btn btn-neon-glow w-100 rounded-pill mt-auto">
+                Rejoindre la prière <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </article>
+          </div>
+
+          <!-- Program Card 3 -->
+          <div class="col-md-6 col-lg-4 scroll-reveal">
+            <article class="program-card glass-card h-100 d-flex flex-column p-4">
+              <div class="program-header d-flex align-items-center justify-content-between mb-4">
+                <div class="program-icon-box">
+                  <i class="bi bi-people-fill"></i>
+                </div>
+                <span class="program-badge">COMMUNION</span>
+              </div>
+              <h3 class="h4 text-light fw-bold mb-3">Rencontres fraternelles</h3>
+              <p class="text-muted-sub mb-4 flex-grow-1">
+                Des rendez-vous chaleureux pour apprendre à nous connaître, partager un repas et construire des liens durables.
+              </p>
+              <ul class="program-features list-unstyled mb-4 small text-muted-sub d-flex flex-column gap-2">
+                <li><i class="bi bi-check-circle-fill text-neon-cyan me-2"></i>Rencontres mensuelles entre femmes</li>
+                <li><i class="bi bi-check-circle-fill text-neon-cyan me-2"></i>Temps de témoignage et d'encouragement</li>
+                <li><i class="bi bi-check-circle-fill text-neon-cyan me-2"></i>Actions solidaires dans le quartier</li>
+              </ul>
+              <a href="#contact" class="btn btn-outline-custom w-100 rounded-pill mt-auto">
+                Venir à une rencontre <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMUNITY COMMUNICATION & ANNOUNCEMENTS -->
+    <section class="community-section py-5" id="evenements">
+      <div class="container py-lg-4">
+        <div class="text-center max-w-700 mx-auto mb-5 scroll-reveal">
+          <div class="badge-community mb-2 d-inline-flex align-items-center gap-2">
+            <i class="bi bi-megaphone-fill text-neon-cyan"></i>
+            <span class="badge-text">COMMUNIQUÉS & RÉUNIONS</span>
+          </div>
+          <h2 class="display-5 fw-bold text-light">Un espace pour informer, rassembler et agir</h2>
+          <p class="text-muted-sub">
+            Les nouvelles de la communauté, les réunions à venir et les demandes d'inscription sont désormais centralisées dans un seul lieu, plus simple et plus accessible pour toutes.
+          </p>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-7 scroll-reveal">
+            <div class="glass-card p-4 p-md-5 h-100">
+              <div class="d-flex align-items-center justify-content-between mb-4">
+                <div>
+                  <span class="small text-uppercase tracking-wider text-neon-cyan fw-semibold">Derniers communiqués</span>
+                  <h3 class="h3 text-light mb-0 mt-2">Actualités de la communauté</h3>
+                </div>
+                <a href="#contact" class="btn btn-outline-custom btn-sm rounded-pill">Publier un message</a>
+              </div>
+
+              <div class="announcement-list d-flex flex-column gap-3">
+                <article class="announcement-item">
+                  <div class="announcement-meta">
+                    <span class="announcement-date">12 Sept</span>
+                    <span class="announcement-tag tag-prayer">Prière</span>
+                  </div>
+                  <h4>Réunion de prière pour les femmes en difficulté</h4>
+                  <p>Nous vous invitons ce mercredi à un moment de partage, de recueillement et de soutien mutuel dans la foi.</p>
+                </article>
+
+                <article class="announcement-item">
+                  <div class="announcement-meta">
+                    <span class="announcement-date">18 Sept</span>
+                    <span class="announcement-tag tag-event">Rencontre</span>
+                  </div>
+                  <h4>Atelier de fraternité et d'entraide</h4>
+                  <p>Une rencontre ouverte à toutes pour échanger sur la vie quotidienne, la solidarité et les moyens de servir ensemble.</p>
+                </article>
+
+                <article class="announcement-item">
+                  <div class="announcement-meta">
+                    <span class="announcement-date">24 Sept</span>
+                    <span class="announcement-tag tag-service">Service</span>
+                  </div>
+                  <h4>Appel à bénévoles pour l'accueil des nouvelles arrivantes</h4>
+                  <p>Nous cherchons des femmes disponibles pour accompagner les nouvelles participantes, prier avec elles et les orienter.</p>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5 scroll-reveal">
+            <div class="glass-card p-4 p-md-5 h-100">
+              <div class="mb-4">
+                <span class="small text-uppercase tracking-wider text-neon-cyan fw-semibold">Prochaines réunions</span>
+                <h3 class="h3 text-light mb-0 mt-2">Agenda de la semaine</h3>
+              </div>
+
+              <div class="meeting-list d-flex flex-column gap-3">
+                <div class="meeting-item">
+                  <div class="meeting-day">Lun</div>
+                  <div class="meeting-content">
+                    <strong>Étude biblique</strong>
+                    <span>18h30 • Salle de prière</span>
+                  </div>
+                </div>
+                <div class="meeting-item">
+                  <div class="meeting-day">Mer</div>
+                  <div class="meeting-content">
+                    <strong>Temps de prière</strong>
+                    <span>17h00 • En ligne et en présentiel</span>
+                  </div>
+                </div>
+                <div class="meeting-item">
+                  <div class="meeting-day">Sam</div>
+                  <div class="meeting-content">
+                    <strong>Rencontre fraternelle</strong>
+                    <span>09h00 • Maison de la communauté</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-4 pt-4 border-top-sub">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <span class="small text-uppercase tracking-wider text-neon-cyan fw-semibold">Discution</span>
+                  <span class="text-muted-sub small">Ouvert</span>
+                </div>
+                <div class="mini-post">
+                  <div class="mini-post-head">
+                    <span class="mini-avatar">M</span>
+                    <strong>Marie</strong>
+                  </div>
+                  <p>Merci pour cette initiative. Je voudrais participer au prochain atelier de partage.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAITH CALLOUT BANNER -->
+    <section class="manifesto-banner py-5" id="manifesto">
+      <div class="container">
+        <div class="glass-card p-4 p-md-5 banner-gradient-border scroll-reveal">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-8">
+              <div class="d-inline-flex align-items-center gap-2 font-mono small text-neon-cyan mb-2">
+                <i class="bi bi-bookmark-heart-fill"></i>
+                <span>NOTRE FOI EN ACTION</span>
+              </div>
+              <h3 class="h2 text-light fw-bold mb-3">
+                « Fortes dans la foi, unies dans l'amour et disponibles pour servir. »
+              </h3>
+              <p class="text-muted-sub m-0">
+                Toutes les femmes sont les bienvenues : jeunes femmes, mères, aînées, nouvelles arrivantes
+                et sœurs de longue date. Chacune a une place et un don à partager.
+              </p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+              <a href="#contact" class="btn btn-neon-glow btn-lg rounded-pill px-4 py-3">
+                <i class="bi bi-heart-fill me-2"></i>Découvrir notre communauté
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & APPLICATION SECTION -->
+    <section class="contact-section py-5 position-relative" id="contact">
+      <div class="container py-lg-4">
+        
+        <div class="text-center max-w-700 mx-auto mb-5 scroll-reveal">
+          <div class="badge-community mb-2 d-inline-flex align-items-center gap-2">
+            <i class="bi bi-envelope-fill text-neon-cyan"></i>
+            <span class="badge-text">PASSER À L'ACTION</span>
+          </div>
+          <h2 class="display-5 fw-bold text-light">Rejoignez les Femmes de l'Église</h2>
+          <p class="text-muted-sub">
+            Vous souhaitez participer à une activité, demander la prière ou proposer votre aide ? Écrivez-nous, nous serons heureuses de vous accueillir.
+          </p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-xl-7 scroll-reveal">
+            
+            <div class="contact-form-card glass-card p-4 p-md-5">
+              <form id="associationForm" novalidate>
+                
+                <div class="row g-3">
+                  <!-- Name -->
+                  <div class="col-md-6">
+                    <label for="fullName" class="form-label text-light small fw-semibold">Nom complet <span class="text-neon-cyan">*</span></label>
+                    <div class="input-wrapper">
+                      <i class="bi bi-person input-icon"></i>
+                      <input type="text" class="form-control custom-input" id="fullName" placeholder="Ex: Marie Curie" required>
+                    </div>
+                  </div>
+
+                  <!-- Email -->
+                  <div class="col-md-6">
+                    <label for="emailAddress" class="form-label text-light small fw-semibold">Adresse Email <span class="text-neon-cyan">*</span></label>
+                    <div class="input-wrapper">
+                      <i class="bi bi-envelope input-icon"></i>
+                      <input type="email" class="form-control custom-input" id="emailAddress" placeholder="marie@domaine.com" required>
+                    </div>
+                  </div>
+
+                  <!-- Program Selection -->
+                  <div class="col-md-6">
+                    <label for="interestOption" class="form-label text-light small fw-semibold">Programme visé <span class="text-neon-cyan">*</span></label>
+                    <div class="input-wrapper">
+                      <i class="bi bi-compass input-icon"></i>
+                      <select class="form-select custom-input" id="interestOption" required>
+                        <option value="" disabled selected>Sélectionnez une option...</option>
+                        <option value="priere">Demander la prière</option>
+                        <option value="etude">Participer à une étude biblique</option>
+                        <option value="rencontre">Venir à une rencontre</option>
+                        <option value="service">Proposer mon aide</option>
+                        <option value="autre">Autre demande</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <!-- Experience Level -->
+                  <div class="col-md-6">
+                    <label for="levelOption" class="form-label text-light small fw-semibold">Votre quartier ou ville</label>
+                    <div class="input-wrapper">
+                      <i class="bi bi-geo-alt input-icon"></i>
+                      <input type="text" class="form-control custom-input" id="levelOption" placeholder="Ex : Dakar, Lyon, Montréal">
+                    </div>
+                  </div>
+
+                  <!-- Message / Motivation -->
+                  <div class="col-12">
+                    <label for="messageBody" class="form-label text-light small fw-semibold">Votre message ou vos motivations <span class="text-neon-cyan">*</span></label>
+                    <div class="input-wrapper">
+                      <textarea class="form-control custom-input py-2" id="messageBody" rows="4" placeholder="Écrivez votre demande, votre témoignage ou votre souhait de servir..." required></textarea>
+                    </div>
+                  </div>
+
+                  <!-- Agreement -->
+                  <div class="col-12">
+                    <div class="form-check custom-checkbox">
+                      <input class="form-check-input" type="checkbox" id="privacyConsent" required>
+                      <label class="form-check-label text-muted-sub small" for="privacyConsent">
+                        J'accepte d'être contactée par l'équipe de l'association et confirme mon adhésion aux valeurs de bienveillance du collectif.
+                      </label>
+                    </div>
+                  </div>
+
+                  <!-- Submit Button -->
+                  <div class="col-12 pt-2">
+                    <button type="submit" class="btn btn-neon-glow w-100 py-3 rounded-pill d-flex align-items-center justify-content-center gap-2 fs-6">
+                      <i class="bi bi-send-fill"></i>
+                      <span>Envoyer mon message</span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Live Success Feedback (Hidden by default) -->
+                <div id="formSuccessAlert" class="alert custom-alert-success mt-4 d-none" role="alert">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle-fill text-success fs-5"></i>
+                    <div>
+                      <strong>Message reçu avec succès !</strong> Notre équipe coordinatrice examinera votre profil et vous répondra sous 48 heures.
+                    </div>
+                  </div>
+                </div>
+
+              </form>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer border-top-sub py-5">
+    <div class="container">
+      <div class="row g-4 justify-content-between">
+        
+        <!-- Brand Col -->
+        <div class="col-lg-4">
+          <a class="d-flex align-items-center gap-2 text-decoration-none mb-3" href="#">
+            <div class="brand-icon-wrapper small-icon">
+              <i class="bi bi-cpu-fill"></i>
+            </div>
+            <span class="brand-text text-light">Femmes <span class="text-neon-cyan">de l'Église</span></span>
+          </a>
+          <p class="text-muted-sub small mb-4">
+            Une organisation chrétienne de femmes dédiée à la prière, à la communion fraternelle et au service de la communauté.
+          </p>
+          <!-- Social Icons -->
+          <div class="footer-socials d-flex gap-3">
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="social-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#contact" class="social-link" aria-label="Nous contacter"><i class="bi bi-envelope-fill"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links Col -->
+        <div class="col-sm-6 col-lg-2">
+          <h4 class="h6 text-light fw-bold text-uppercase tracking-wider mb-3">Navigation</h4>
+          <ul class="list-unstyled footer-nav-list small d-flex flex-column gap-2">
+            <li><a href="#about" class="footer-link">À propos de nous</a></li>
+            <li><a href="#programmes" class="footer-link">Nos Programmes</a></li>
+            <li><a href="#impact" class="footer-link">Impact & Chiffres</a></li>
+            <li><a href="#manifesto" class="footer-link">Notre foi</a></li>
+            <li><a href="#contact" class="footer-link">Nous Contacter</a></li>
+          </ul>
+        </div>
+
+        <!-- Resources Col -->
+        <div class="col-sm-6 col-lg-2">
+          <h4 class="h6 text-light fw-bold text-uppercase tracking-wider mb-3">Ressources</h4>
+          <ul class="list-unstyled footer-nav-list small d-flex flex-column gap-2">
+            <li><a href="#programmes" class="footer-link">Études bibliques</a></li>
+            <li><a href="#programmes" class="footer-link">Temps de prière</a></li>
+            <li><a href="#programmes" class="footer-link">Rencontres fraternelles</a></li>
+            <li><a href="#contact" class="footer-link">Demander un accompagnement</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter / Status Col -->
+        <div class="col-lg-3">
+          <h4 class="h6 text-light fw-bold text-uppercase tracking-wider mb-3">Vie de l'organisation</h4>
+          <div class="glass-card p-3 font-mono small mb-3">
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <span class="text-muted-sub">Prochaine rencontre:</span>
+              <span class="text-success fw-bold">OUVERTE À TOUTES</span>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+              <span class="text-muted-sub">Accueil:</span>
+              <span class="text-neon-cyan">Sur inscription</span>
+            </div>
+          </div>
+          <span class="text-muted-sub small">
+            Association de femmes • Tous droits réservés &copy; 2026 Femmes de l'Église.
+          </span>
+        </div>
+
+      </div>
+
+      <!-- Bottom Credits & Back to Top -->
+      <div class="d-flex flex-column flex-md-row align-items-center justify-content-between pt-4 mt-4 border-top-sub text-muted-sub small">
+        <div>
+          Dans la foi, la fraternité et le service &bull; Ensemble avec amour.
+        </div>
+        <div class="mt-2 mt-md-0">
+          <a href="#hero" class="back-to-top text-decoration-none">
+            Haut de page <i class="bi bi-arrow-up-short"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3+ JS Bundle (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Interactive Script for Smooth Scroll Reveal & Form Handling -->
+  <script>
+    // Smooth Scroll Observer for Entrance Animations
+    document.addEventListener('DOMContentLoaded', () => {
+      const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.15
+      };
+
+      const scrollObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      const revealElements = document.querySelectorAll('.scroll-reveal');
+      revealElements.forEach(el => scrollObserver.observe(el));
+
+      // Simple interactive form feedback demonstration
+      const form = document.getElementById('associationForm');
+      const alertBox = document.getElementById('formSuccessAlert');
+
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          if (form.checkValidity()) {
+            alertBox.classList.remove('d-none');
+            form.reset();
+            alertBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          } else {
+            form.reportValidity();
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>
